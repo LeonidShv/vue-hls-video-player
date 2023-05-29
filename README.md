@@ -51,7 +51,7 @@ For **nuxt 3**, try to wrap this component in ClientOnly, images for previewImag
     class="customClassName"
   />
 </ClientOnly>
-
+```
 ### Props:
 **type**: 
 1. value: 'default', type: String
