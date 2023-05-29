@@ -1,7 +1,7 @@
 {
   "name": "vue-hls-video-player",
   "private": false,
-  "version": "0.0.4",
+  "version": "0.0.7",
   "type": "module",
   "files": [
     "dist"
@@ -22,13 +22,13 @@
     "preview": "vite preview"
   },
   "keywords": [
+    "m3u8",
     "m3u8 video player",
     "m3u8 vue video",
     "hls video player",
-    "vue video player",
+    "hls",
     "vue hls video player",
-    "vue hls",
-    "vue video player"
+    "vue hls"
   ],
   "homepage": "https://github.com/LeonidShv/vue-hls-video-player",
   "bugs": {
