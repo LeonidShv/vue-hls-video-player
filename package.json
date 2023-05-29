@@ -1,26 +1,13 @@
 {
   "name": "vue-hls-video-player",
   "private": false,
-  "version": "0.0.7",
+  "version": "1.0.1",
   "type": "module",
   "files": [
     "dist"
   ],
-  "main": "./dist/vue-hls-video-player.umd.cjs",
+  "main": "./dist/vue-hls-video-player.js",
   "module": "./dist/vue-hls-video-player.js",
-  "types": "./dist/main.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/vue-hls-video-player.js",
-      "require": "./dist/vue-hls-video-player.umd.js"
-    },
-    "./dist/style.css": "./dist/style.css"
-  },
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build && vue-tsc --emitDeclarationOnly",
-    "preview": "vite preview"
-  },
   "keywords": [
     "m3u8",
     "m3u8 video player",

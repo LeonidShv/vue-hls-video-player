@@ -5,18 +5,18 @@
     :previewImageLink="previewImageLink"
     :link="link"
     :progress="progress"
-    class="course-video"
+    :isMuted="isMuted"
+    :isControls="isControls"
   />
 
   <VPreviewVideoPlayer
     v-else-if="type === 'preview'"
-    class="course-video"
     :previewImageLink="previewImageLink"
     :link="link"
   />
 </template>
 
-<script setup lang="ts">
+<script setup>
 import VDefaultVideoPlayer from './VDefaultVideoPlayer.vue'
 import VPreviewVideoPlayer from './VPreviewVideoPlayer.vue'
 
@@ -38,6 +38,14 @@ defineProps({
   progress: {
     type: Number,
     default: 0
+  },
+  isMuted: {
+    type: Boolean,
+    default: false
+  },
+  isControls: {
+    type: Boolean,
+    default: true
   },
 })
 

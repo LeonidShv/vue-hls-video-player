@@ -7,7 +7,6 @@
     :poster="previewImageLink"
     :controls="isControls"
     :title="title"
-    data-test="video-player"
   >
     <source
       :src="link"
@@ -16,7 +15,7 @@
   </video>
 </template>
 
-<script setup lang="ts">
+<script setup>
 import { onMounted, onUpdated, ref } from 'vue'
 import Hls from 'hls.js'
 
