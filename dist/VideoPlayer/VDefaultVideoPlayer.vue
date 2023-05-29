@@ -3,12 +3,13 @@
     :previewImageLink="previewImageLink"
     :link="link"
     :progress="progress"
-    title="Buttons W and S can change speed of your player"
+    :isMuted="isMuted"
+    :isControls="isControls"
     @pause="pause"
   />
 </template>
 
-<script setup lang="ts">
+<script setup>
 import BasePlayer from './BasePlayer.vue'
 
 const emit = defineEmits(['pause'])
@@ -25,6 +26,14 @@ defineProps({
   progress: {
     type: Number,
     default: 0
+  },
+  isMuted: {
+    type: Boolean,
+    default: false
+  },
+  isControls: {
+    type: Boolean,
+    default: true
   },
 })
 
